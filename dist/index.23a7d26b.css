@@ -1,0 +1,192 @@
+.responsive-image {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.responsive-featured-image {
+  object-fit: cover;
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.logo {
+  clip-path: circle(50%);
+  max-width: 150px;
+  height: auto;
+}
+
+.footer-logo {
+  clip-path: circle(50%);
+  max-width: 100px;
+  height: auto;
+}
+
+footer {
+  text-align: center;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+footer ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+footer li {
+  margin: 0 10px;
+  display: inline;
+}
+
+footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin-top: 10px;
+  font-size: 2em;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+nav ul {
+  justify-content: center;
+  margin: 0;
+  padding: 10px;
+  list-style-type: none;
+  display: flex;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: #333;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 1.1em;
+  text-decoration: none;
+  transition: color .3s, background-color .3s;
+}
+
+nav a:hover {
+  color: #fff;
+  background-color: #007bff;
+}
+
+nav a:active {
+  color: #fff;
+  background-color: #0056b3;
+}
+
+.svg-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.svg-container {
+  text-align: center;
+}
+
+#bridge {
+  animation: 4s infinite moveBridge, 8s infinite colorChange;
+}
+
+@keyframes moveBridge {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(50px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    fill: #7d6f4b;
+  }
+
+  50% {
+    fill: #8b4513;
+  }
+
+  100% {
+    fill: #7d6f4b;
+  }
+}
+
+@media (width <= 768px) {
+  .logo, .footer-logo {
+    max-width: 120px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  .responsive-featured-image, .responsive-image {
+    width: 50%;
+  }
+
+  .svg-section {
+    margin-top: 30px;
+  }
+}
+
+h2, h3, p {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+ul {
+  text-align: center;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul li {
+  margin: 10px 20px;
+  display: inline-block;
+}
+
+ul li a {
+  color: #333;
+  text-align: center;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+.justified-text {
+  text-align: justify;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+/*# sourceMappingURL=index.23a7d26b.css.map */

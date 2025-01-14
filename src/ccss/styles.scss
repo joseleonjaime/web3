@@ -1,0 +1,206 @@
+/* Stylos responsivos */
+.responsive-image {
+    width: 50%; /* Reducción al 50% de su tamaño original */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Imagen destacada reducida al 50% */
+.responsive-featured-image {
+    width: 50%; /* Reducción al 50% de su tamaño original */
+    height: auto;
+    display: block;
+    object-fit: cover; /* Asegura que la imagen se recorte adecuadamente */
+    margin: 0 auto;
+}
+
+/* Logotipo circular ubicado en la cabecera */
+.logo {
+    max-width: 150px; /* Ajusta el tamaño del logotipo en la cabecera */
+    height: auto;
+    clip-path: circle(50%); /* Aplica clip-path para darle una forma circular */
+}
+
+/* Logotipo circular ubicado en el pie de página */
+.footer-logo {
+    max-width: 100px; /* Ajusta el tamaño del logotipo en el pie de página */
+    height: auto;
+    clip-path: circle(50%); /* También aplicamos clip-path al logotipo en el pie de página */
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Estilos para el encabezado */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Ajustes para la navegación */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1em;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Transición suave */
+    padding: 5px 10px;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Efecto cuando se pasa el ratón sobre los enlaces (hover) */
+nav a:hover {
+    color: #fff; /* Cambia el color del texto */
+    background-color: #007BFF; /* Cambia el color de fondo */
+}
+
+/* Efecto cuando el enlace es activado (clic) */
+nav a:active {
+    color: #fff; /* Cambia el color del texto */
+    background-color: #0056b3; /* Un color con un  tono más oscuro cuando se hace clic */
+}
+
+/* Estilos para la sección del SVG */
+.svg-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.svg-container {
+    text-align: center;
+}
+
+/* Animación para el SVG */
+#bridge {
+    animation: moveBridge 4s infinite, colorChange 8s infinite;
+}
+
+/* Animación del movimiento del puente (de izquierda a derecha) */
+@keyframes moveBridge {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50px); /* Mueve el puente 50px a la derecha */
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Animación del cambio de color */
+@keyframes colorChange {
+    0% {
+        fill: #7D6F4B; /* Color marrón del puente */
+    }
+    50% {
+        fill: #8B4513; /* Un tono más oscuro, representando el atardecer */
+    }
+    100% {
+        fill: #7D6F4B; /* Regresa al color original */
+    }
+}
+
+/* Ajustes para las pantallas pequeñas */
+@media (max-width: 768px) {
+    .logo, .footer-logo {
+        max-width: 120px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    /* Garantiza que las imágenes y el SVG se ajusten correctamente en las pantallas pequeñas */
+    .responsive-featured-image, .responsive-image {
+        width: 50%; /* Reducción al 50% en pantallas pequeñas también */
+    }
+
+    .svg-section {
+        margin-top: 30px;
+    }
+}
+
+/* Centrado de los títulos y textos */
+h2, h3, p {
+    text-align: center; /* Centra los textos de los encabezados y párrafos */
+    margin: 0 auto;
+    width: 80%; /* Opción para ajustar el ancho del párrafo si es necesario */
+}
+
+/* Centrado de los enlaces dentro de la lista en "Enlaces de interés" */
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center; /* Centra los enlaces en la lista */
+}
+
+/* Estilo para los enlaces */
+ul li {
+    display: inline-block; 
+    margin: 10px 20px; /* Espaciado entre los enlaces */
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1em;
+    text-align: center; 
+}
+
+/* Justificación del texto */
+.justified-text {
+    text-align: justify; 
+    margin: 0 auto; 
+    width: 80%; 
+    line-height: 1.6; 
+}
